@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let ramd = Math.random();
+        let first, second, third;
+
+        // lets genrate first word
+        if (ramd < 0.33) {
+            first = prompt("entre the first adjective");
+        }
+        else if (ramd < 0.66 && ramd > 0.33) {
+            first = prompt("entre the another adjective");
+        }
+        else {
+            first = prompt("entre the another adjective");
+        }
+
+        // lets genrate secobnd word
+         ramd = Math.random();
+        if (ramd < 0.33) {
+            second = prompt("entre the second item");
+        }
+        else if (ramd < 0.66 && ramd > 0.33) {
+            second = prompt("entre the another item");
+        }
+        else {
+            second = prompt("entre the another item");
+        }
+
+        // lets genrate third word
+         ramd = Math.random();
+        if (ramd < 0.33) {
+            third = prompt("entre the shope");
+        }
+        else if (ramd < 0.66 && ramd > 0.33) {
+            third = prompt("entre the shope");
+        }
+        else {
+            third = prompt("entre the shope name");
+        }
+
+        console.log(`${first}${second}${third}`);
+    </script>
+</body>
+
+</html>

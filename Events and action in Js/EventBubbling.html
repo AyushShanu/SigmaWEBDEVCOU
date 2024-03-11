@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .child {
+            border: 2px solid black;
+            padding: 14px;
+            margin: 14px;
+            background-color: rgb(120, 184, 240);
+            cursor: pointer;
+        }
+
+        .childcontainer {
+            padding: 14px;
+            margin: 14px;
+            background-color: rgb(234, 234, 106);
+        }
+
+        .container {
+            padding: 14px;
+            margin: 14px;
+            background-color: rgb(89, 89, 81);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="childcontainer">
+            <div class="child">
+                i am the child
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector(".child").addEventListener
+            ("click", (e) => {
+                e.stopPropagation()
+                alert("Child class is Clicked")
+            })
+
+        document.querySelector(".childcontainer").addEventListener
+            ("click", (e) => {
+                e.stopPropagation()
+                alert("ChildContainer class is Clicked")
+            })
+
+        document.querySelector(".container").addEventListener
+            ("click", (e) => {
+                alert("Container class is Clicked")
+            })
+        function getRamdomColor() {
+            val1 = Math.ceil(0 + Math.random() * 255);
+            val2 = Math.ceil(0 + Math.random() * 255);
+            val3 = Math.ceil(0 + Math.random() * 255);
+            return `rgb(${val1} ${val2} ${val3})`
+        }
+        // setInterval(() => {
+        //     document.querySelector(".child").style.backgroundColor =getRamdomColor()
+        // }, 3000);
+
+
+        setTimeout(() => {
+            document.querySelector(".child").style.backgroundColor =getRamdomColor()
+        }, 1000);
+    </script>
+</body>
+
+</html>
