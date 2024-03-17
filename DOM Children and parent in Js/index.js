@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 console.log("hello world")
 console.log(document.body.childNodes)
 let cont = (document.body.childNodes[1])
@@ -12,4 +13,20 @@ console.log(cont.firstElementChild.parentElement)
 
 console.log(document.body.firstElementChild.children)
 console.log(document.body.firstElementChild.children[3].nextElementSibling)
+=======
+console.log("hello world")
+console.log(document.body.childNodes)
+let cont = (document.body.childNodes[1])
+console.log(cont)
+console.log(cont.firstChild)
+console.log(cont.lastChild)
+console.log(cont.firstElementChild)
+console.log(cont.lastElementChild.style.color = "red")
+console.log(cont.lastElementChild.style.color = "red")
+console.log(cont.lastElementChild.style.backgroundColor = "cyan")
+console.log(cont.firstElementChild.parentElement)
+
+console.log(document.body.firstElementChild.children)
+console.log(document.body.firstElementChild.children[3].nextElementSibling)
+>>>>>>> Stashed changes
 console.log(document.body.firstElementChild.children[3].previousElementSibling)

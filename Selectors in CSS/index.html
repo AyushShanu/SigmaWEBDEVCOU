@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,4 +64,71 @@
     <a href="https://www.google.com">Go to Google</a>
     <a href="https://www.facebook.com">Go to Fackebook</a>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+         div{
+            /* background-color:blueviolet; */
+        } 
+        /* Class Selector */
+        .red{
+            background-color: rgb(246, 45, 45);
+        }
+        /* ID Selector */
+        #green{
+            background-color: rgb(8, 241, 8);
+        }
+        /* Child Selector */
+        div > p{
+            background-color: cornflowerblue;
+            color: burlywood;
+        }
+        /* Decendent Child */
+        div p{
+            color: aquamarine;
+            background-color: black;
+        }
+        /* Universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+         
+        /* Pseudo Selector */
+        a:visited{
+            color:rgb(238, 146, 8) ;
+        }
+        a:hover{
+            background-color: yellow;
+        }
+        p:first-child{
+            background-color: darkcyan;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>i am one</p>
+        <p>i am second</p>
+    </main>
+    <div class="red">
+        i am a div
+        <article>
+        <p>Lorem ipsum dolor sit.</p>
+    </article>
+    </div>
+    <div id="green">
+        i am another div
+    </div>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.facebook.com">Go to Fackebook</a>
+</body>
+>>>>>>> Stashed changes
 </html>
